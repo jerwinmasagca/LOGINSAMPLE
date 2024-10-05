@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bgjer.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    gap: 10px;
+    background-color: white;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+
+.wrapper {
+    width: 500px;
+    background: white;
+    color: #333;
+    border-radius: 5px;
+    padding: 50px;
+    min-height: 600px;
+    margin: 0 auto;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+.wrapper h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'poppins';
+}
+
+.wrapper h2 {
+    font-size: 15px;
+    font-family: 'poppins';
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 200;
+    color: rgba(139, 139, 139, 1);
+    padding-bottom: 40px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.input-box label {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 600;
+    font-family: 'poppins';
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(139, 139, 139, 1);
+    font-size: 16px;
+    color: #333;
+    padding: 0 45px 0 0px;
+    font-family: 'poppins';
+}
+
+.input-box input::placeholder {
+    color: rgba(139, 139, 139, 1);
+}
+
+.input-box img {
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(85, 85, 85, 1);
+}
+
+.btn {
+    width: 80%;
+    height: 45px;
+    background: rgba(28, 60, 228, 1);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    font-family: 'poppins';
+    margin: 0 auto;
+    display: block;
+}
+
+.forgot {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.forgot a {
+    color: rgba(28, 60, 228, 1);
+    text-decoration: none;
+    font-family: 'poppins';
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+    margin-left: 3in;
+    margin-right: 3in;
+    box-sizing: border-box;
+}
+
+.qcuhome {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+#qitf {
+    padding: 20px;
+    padding-top: 35px;
+    border-right: 2px solid white;
+    margin-right: 20px;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+
+#qcu {
+    padding: 20px;
+    padding-top: 35px;
+    font-family: 'sail';
+    font-weight: 400;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#home {
+    border-right: 1px solid white;
+}
+
+#about {
+    border: none;
+    margin-left: 5px;
+}
+
+#home, #about {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+}
+
+.socials {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+    margin-bottom: 5%;
+    padding: 40px 0;
+    position: relative;
+    margin-top: 40px;
+}
+
+.socials span {
+    display: flex;
+    align-items: center;
+}
+
+.socials::before,
+.socials::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: white;
+}
+
+.socials::before {
+    top: 0;
+    width: calc(100% - 6in);
+    margin-left: 3in;
+}
+
+.socials::after {
+    bottom: 0;
+    width: calc(100% - 6in);
+    margin-left: 3in;
+}
+
+#privacy {
+    border-right: 2px solid white;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.privacy {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.privacy h6 {
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+#terms {
+    border-right: 2px solid white;
+    padding-right: 20px;
+}
+
+#privacy h6,
+#terms h6 {
+    margin: 0;
+}
+
+#sitemap h6 {
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.copy {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 40px;
+    color: rgba(136, 136, 136, 1);
+    margin-top: 40px;
+}
+
+.copy h6 {
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.qcuhome, .socials, .privacy, .copy {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(100% - 6in);
+    padding-left: 3in;
+    padding-right: 3in;
+}
+
+.privacy, .copy {
+    justify-content: center;
+    text-align: center;
+}
