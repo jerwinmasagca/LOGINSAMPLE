@@ -163,11 +163,10 @@ body {
 }
 
 .qcuhome {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 10px;
+    padding: 0 100px;
 }
 
 .nav-left {
@@ -308,7 +307,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    max-width: calc(150% - 6in);
+    max-width: calc(125% - 7in);
     padding-left: 3in;
     padding-right: 3in;
 }
@@ -316,4 +315,83 @@ body {
 .privacy, .copy {
     justify-content: center;
     text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .wrapper {
+        width: 350px;
+        padding: 20px;
+    }
+
+    .wrapper h1 {
+        font-size: 24px;
+    }
+
+    .wrapper h2 {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+    .input-box label {
+        font-size: 18px;
+    }
+
+    .input-box input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .btn {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .forgot {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 60px 0;
+        overflow-x: hidden;
+    }
+
+    .qcuhome {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .nav-left, .nav-right {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .socials {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        display: inline-block;
+    }
+
+    .copy {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .copy h6 {
+        font-size: 12px;
+        margin: 0;
+        white-space: nowrap;
+        line-height: 1;
+    }
+
+    .copy img {
+        width: 16px;
+        height: auto;
+    }
 }
