@@ -308,7 +308,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    max-width: calc(100% - 6in);
+    max-width: calc(125% - 6in);
     padding-left: 3in;
     padding-right: 3in;
 }
